@@ -15,7 +15,7 @@
     <div class="w-10/12 mx-auto md:flex justify-between items-center">
       <div class="text-center">
         <h1 class="font-medium text-3xl ">---SALE FEVER---</h1>
-        <p class="text-6xl font-bold my-10 w-[703px]">Purchase TK 200 or above & get <span class="text-pink-600">20%
+        <p class="text-6xl font-bold my-10 md:w-[703px]">Purchase TK 200 or above & get <span class="text-pink-600">20%
             off</span></p>
         <span class="text-2xl font-medium ">Use Promo Code</span>
         <button class="text-2xl font-semibold text-white bg-pink-500 rounded-md">SELL200</button>
@@ -26,14 +26,14 @@
     </div>
   </header>
   <main class="mt-10 w-11/12 mx-auto">
-    <div class="flex justify-between">
+    <div class="md:flex justify-between">
       <div>
         <div>
           <h1 class="font-semibold text-4xl">Kitchenware</h1>
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  h-[350px]">
+          <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- first card -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card  bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card  md:w-[310px]     bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -55,7 +55,7 @@
             </div>
             <!-- second -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card md:w-[310px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -67,7 +67,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-xl font-semibold">K. Accessories 22</h2>
+                  <h2 class="card-title text-xl font-semibold">K. Accessories</h2>
                 </div>
                 <div class="pb-20 items-center text-center flex gap-2 justify-center">
                   <h1 id="firstCardValue">25.00 </h1>
@@ -78,7 +78,7 @@
 
             <!-- third -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card md:w-[310px]bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -90,7 +90,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-xl font-semibold">K. Accessories 33</h2>
+                  <h2 class="card-title text-xl font-semibold">Home Cooker</h2>
                 </div>
                 <div class="pb-20 items-center text-center flex gap-2 justify-center">
                   <h1 id="firstCardValue">49.00 </h1>
@@ -109,7 +109,7 @@
           <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- first card -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card md:w-[310px]bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -131,7 +131,7 @@
             </div>
             <!-- second -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card md:w-[310px]bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -153,8 +153,8 @@
             </div>
 
             <!-- third -->
-            <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
+            <div class="mt-20 md:mt-0">
+              <div onclick="handleCard(this)" id="fistCard" class="card md:w-[310px]bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -178,14 +178,14 @@
         </div>
       </div>
       <div>
-        <div class="w-[342px] h-[150px] shadow-xl p-6">
+        <div class="md:w-[342px] md:h-[150px] shadow-xl p-6">
           <div>
             <h1>Have coupon?</h1>
             <input class="border py-2" placeholder="Coupon code" type="text" name="" id="">
             <button id="apply" class="text-white bg-pink-500 rounded-md py-2 w-20">Apply</button>
           </div>
         </div>
-        <div class="h-[416px] w-[342px] shadow-xl mt-[50px] p-6">
+        <div class="md:h-[416px] md:w-[342px] shadow-xl mt-[50px] p-6">
           <div class="selectedItem" id="selectedItem">
 
           </div>
