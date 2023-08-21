@@ -30,10 +30,10 @@
       <div>
         <div>
           <h1 class="font-semibold text-4xl">Kitchenware</h1>
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  h-[350px]">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  h-[350px]">
             <!-- first card -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card  bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -55,7 +55,7 @@
             </div>
             <!-- second -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -78,7 +78,7 @@
 
             <!-- third -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -106,10 +106,10 @@
         </div>
         <div class="mt-20">
           <h1 class="font-semibold text-4xl mb-10">Kitchenware</h1>
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  h-[350px]">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- first card -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -131,7 +131,7 @@
             </div>
             <!-- second -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -154,7 +154,7 @@
 
             <!-- third -->
             <div>
-              <div onclick="handleCard(this)" id="fistCard" class="card w-96 bg-base-100 shadow-xl h-[350px]">
+              <div onclick="handleCard(this)" id="fistCard" class="card w-[360px] bg-base-100 shadow-xl h-[350px]">
                 <figure class="px-10 pt-10">
                   <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -193,13 +193,27 @@
           <div>
             <h1>Total Price: <span id="totalValue">00</span> <span>Tk</span> </h1>
 
-            <h1>Discount: <span id="Discount" >00 </span> <span>Tk</span> </h1>
+            <h1>Discount: <span id="Discount">00 </span> <span>Tk</span> </h1>
             <h1>Total: <span> 00 </span> <span>Tk</span> </h1>
           </div>
           <hr>
           <br>
-          <button onclick="handleCard(this)" class="text-white bg-pink-500 rounded-md py-2 w-full "
-            id="Button">Make Purchase</button>
+
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="text-white bg-pink-500 rounded-md py-2 w-full " onclick="my_modal_2.showModal()">Make Purchase</button>
+          <dialog id="my_modal_2" class="modal">
+            <form method="dialog" class="modal-box text-center">
+              <div class="flex justify-center">
+                <img  src="/images/congo.png" alt="">
+              </div>
+              <p class="py-4 font-bold text-2xl">Congratulations</p>
+              <p class="py-4">Your Purchase the product</p>
+              <a href="#" id="homeLink"><button class="text-white bg-pink-500 rounded-md py-4 px-6">HOME</button></a>
+            </form>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
         </div>
       </div>
     </div>
@@ -207,7 +221,17 @@
     </div>
   </main>
   <script src="js/calculation.js"></script>
-
+  <script>
+    const homeLink = document.getElementById('homeLink');
+  
+    homeLink.addEventListener('click', function(event) {
+      // Prevent the default behavior of the anchor link
+      event.preventDefault();
+  
+      // Reload the page
+      location.reload();
+    });
+  </script>
 </body>
 
 </html>
