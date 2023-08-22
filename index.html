@@ -181,8 +181,8 @@
         <div class="md:w-[342px] md:h-[150px] shadow-xl p-6">
           <div>
             <h1>Have coupon?</h1>
-            <input class="border py-2" placeholder="Coupon code" type="text" name="" id="">
-            <button id="apply" class="text-white bg-pink-500 rounded-md py-2 w-20">Apply</button>
+            <input  class="border py-2" placeholder="Coupon code" type="text" name="" id="Input">
+            <button  id="apply" class="text-white bg-pink-500 rounded-md py-2 w-20" disabled>Apply</button>
           </div>
         </div>
         <div class="md:h-[416px] md:w-[342px] shadow-xl mt-[50px] p-6">
@@ -193,14 +193,14 @@
           <div>
             <h1>Total Price: <span id="totalValue">00</span> <span>Tk</span> </h1>
 
-            <h1>Discount: <span id="Discount">00 </span> <span>Tk</span> </h1>
-            <h1>Total: <span> 00 </span> <span>Tk</span> </h1>
+            <h1>Discount: <span id="Discount20">00 </span> <span>Tk</span> </h1>
+            <h1>Total: <span ID="didUpdate"> 00 </span> <span>Tk</span> </h1>
           </div>
           <hr>
           <br>
 
           <!-- Open the modal using ID.showModal() method -->
-          <button class="text-white bg-pink-500 rounded-md py-2 w-full " onclick="my_modal_2.showModal()">Make Purchase</button>
+          <button class="text-white bg-pink-500 rounded-md py-2 w-full " onclick="my_modal_2.showModal()" id="make" disabled>Make Purchase</button>
           <dialog id="my_modal_2" class="modal">
             <form method="dialog" class="modal-box text-center">
               <div class="flex justify-center">
@@ -232,6 +232,7 @@
       location.reload();
     });
   </script>
+  
 </body>
 
 </html>
